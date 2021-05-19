@@ -1,8 +1,8 @@
-const Sequelize = require('sequelize')
-const sequelize = new Sequelize('test', 'root', 'MarcoS00', {
-    host: "localhost",
-    dialect: 'mysql'
-})
+// const Sequelize = require('sequelize')
+// const sequelize = new Sequelize('test', 'root', 'MarcoS00', {
+//     host: "localhost",
+//     dialect: 'mysql'
+// })
 
 // const Postagem =  sequelize.define('postagens', {
 //     titulo: {
