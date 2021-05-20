@@ -1,12 +1,16 @@
-const db = require("./db")
+const Sequelize = require("sequelize")
+const connect = require('../models/db')
 
-const Post = db.sequelize.define('postagens', {
+const Post = connect.define('postagem', {
     titulo: {
-        type: db.Sequelize.STRING
+        type: Sequelize.STRING,
     },
     conteudo: {
-        type: db.Sequelize.TEXT
+        type: Sequelize.TEXT,
     }
 })
 
-module.exports = Post
+// Post.sync({force: true}).then(() => {
+//     console.log("Tabela Criada!")
+// });
+module.exports = Post;

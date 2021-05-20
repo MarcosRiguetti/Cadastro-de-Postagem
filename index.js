@@ -3,6 +3,7 @@
     const app = express()
     const handlebars = require('express-handlebars')
     const bodyParser = require('body-parser')
+    const connect = require('./models/db')
     const Post = require('./models/Post')
 
 //Configurações
